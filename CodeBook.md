@@ -1,12 +1,19 @@
-## CODEBOOK - Coursera *Getting & Cleaning Data* Course Project
+## CODEBOOK - Coursera *Getting & Cleaning Data*, Course Project
 
 ### DATA DICTIONARY - First Tidy Data Set:
 #### *All mean and std observations*
+#### (White-space-delimited file format, with header)
 
-This is where data dictionary goes for first tidy data set
+#### Subject
+  * text1
+  * text2
+  * text3
+
+
 
 ### DATA DICTIONARY - Second Tidy Data Set:
-#### *Summary averaging observations for each Subject/Activity*
+#### *Summarzation, averages feature observations for each Subject/Activity pair*
+#### (White-space-delimited file format, with header)
 
 This is where data dictionary goes for first tidy data set
 

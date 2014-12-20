@@ -752,6 +752,10 @@ the melted data, as in "dcast(meltData, Subject + Activity ~ variable, mean)".
 We also apply an order() operation to yield a major ordering of the data
 by Subject and minor ordering by Activity.
 
+Finally, the second tidy data frame is stored as 
+a file "./data/tidy/resultSet2.txt"
+relative to the user's working directory.
+
 In summary, the second tidy data set is obtained as a summary of
 the first tidy data set by averaging, for each pair of Subject/Activity,
 all the data samples for each feature for the given Subject and Activity. The
@@ -766,5 +770,4 @@ second tidy data set from the first.
 
 Instructions for running the "run_analysis.R" script are found in the
 "README.txt" file located in the above-referenced git repository.
-
 

@@ -4,25 +4,25 @@
 #### *All mean and std observations*
 #### (White-space-delimited file format, with header)
 
-#### **Subject
+#### Subject
   * Integer code identifying experimental subject in UCI HAR dataset
   * Units: dimensionless
   * Values in {1, 3, 5, 6, 7, 8, 11, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 28, 29, 30} represent experiment subjects in *training* group
   * Values in {2, 4, 9, 10, 12, 13, 18, 20, 24} represent experiment subjects in *test* group
   * Refer to: subject_train.txt and subject_test.txt files in UCI HAR dataset
 
-#### **Activity
+#### Activity
   * Character string indicating the activity that the experimental subject is engaged in during the collection of measurements
   * Units: dimensionless, from enumerated set
   * Values in {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
   * Refer to: activity_labels.txt file in UCI HAR dataset
 
-#### **tBodyAcc_mean_X**
+#### tBodyAcc_mean_X
   * text1
   * text2
   * text3
 
-#### **tBodyAcc_mean_Y**
+#### tBodyAcc_mean_Y
   * text1
   * text2
   * text3

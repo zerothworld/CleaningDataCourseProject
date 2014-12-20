@@ -4,345 +4,345 @@
 #### *All mean and std observations*
 #### (White-space-delimited file format, with header)
 
-#### Subject
+#### **Subject
   * Integer code identifying experimental subject in UCI HAR dataset
   * Units: dimensionless
   * Values in {1, 3, 5, 6, 7, 8, 11, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 28, 29, 30} represent experiment subjects in *training* group
   * Values in {2, 4, 9, 10, 12, 13, 18, 20, 24} represent experiment subjects in *test* group
   * Refer to: subject_train.txt and subject_test.txt files in UCI HAR dataset
 
-#### Activity
+#### **Activity
   * Character string indicating the activity that the experimental subject is engaged in during the collection of measurements
   * Units: dimensionless, from enumerated set
   * Values in {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
   * Refer to: activity_labels.txt file in UCI HAR dataset
 
-#### tBodyAcc_mean_X
+#### **tBodyAcc_mean_X**
   * text1
   * text2
   * text3
 
-#### tBodyAcc_mean_Y
+#### **tBodyAcc_mean_Y**
   * text1
   * text2
   * text3
 
-#### tBodyAcc_mean_Z
+#### **tBodyAcc_mean_Z**
   * text1
   * text2
   * text3
 
-#### tBodyAcc_std_X
+#### **tBodyAcc_std_X**
   * text1
   * text2
   * text3
 
-#### tBodyAcc_std_Y
+#### **tBodyAcc_std_Y**
   * text1
   * text2
   * text3
 
-#### tBodyAcc_std_Z
+#### **tBodyAcc_std_Z**
   * text1
   * text2
   * text3
 
-#### tGravityAcc_mean_X
+#### **tGravityAcc_mean_X**
   * text1
   * text2
   * text3
 
-#### tGravityAcc_mean_Y
+#### **tGravityAcc_mean_Y**
   * text1
   * text2
   * text3
 
-#### tGravityAcc_mean_Z
+#### **tGravityAcc_mean_Z**
   * text1
   * text2
   * text3
 
-#### tGravityAcc_std_X
+#### **tGravityAcc_std_X**
   * text1
   * text2
   * text3
 
-#### tGravityAcc_std_Y
+#### **tGravityAcc_std_Y**
   * text1
   * text2
   * text3
 
-#### tGravityAcc_std_Z
+#### **tGravityAcc_std_Z**
   * text1
   * text2
   * text3
 
-#### tBodyAccJerk_mean_X
+#### **tBodyAccJerk_mean_X**
   * text1
   * text2
   * text3
 
-#### tBodyAccJerk_mean_Y
+#### **tBodyAccJerk_mean_Y**
   * text1
   * text2
   * text3
 
-#### tBodyAccJerk_mean_Z
+#### **tBodyAccJerk_mean_Z**
   * text1
   * text2
   * text3
 
-#### tBodyAccJerk_std_X
+#### **tBodyAccJerk_std_X**
   * text1
   * text2
   * text3
 
-#### tBodyAccJerk_std_Y
+#### **tBodyAccJerk_std_Y**
   * text1
   * text2
   * text3
 
-#### tBodyAccJerk_std_Z
+#### **tBodyAccJerk_std_Z**
   * text1
   * text2
   * text3
 
-#### tBodyGyro_mean_X
+#### **tBodyGyro_mean_X**
   * text1
   * text2
   * text3
 
-#### tBodyGyro_mean_Y
+#### **tBodyGyro_mean_Y**
   * text1
   * text2
   * text3
 
-#### tBodyGyro_mean_Z
+#### **tBodyGyro_mean_Z**
   * text1
   * text2
   * text3
 
-#### tBodyGyro_std_X
+#### **tBodyGyro_std_X**
   * text1
   * text2
   * text3
 
-#### tBodyGyro_std_Y
+#### **tBodyGyro_std_Y**
   * text1
   * text2
   * text3
 
-#### tBodyGyro_std_Z
+#### **tBodyGyro_std_Z**
   * text1
   * text2
   * text3
 
-#### tBodyGyroJerk_mean_X
+#### **tBodyGyroJerk_mean_X**
   * text1
   * text2
   * text3
 
-#### tBodyGyroJerk_mean_Y
+#### **tBodyGyroJerk_mean_Y**
   * text1
   * text2
   * text3
 
-#### tBodyGyroJerk_mean_Z
+#### **tBodyGyroJerk_mean_Z**
   * text1
   * text2
   * text3
 
-#### tBodyGyroJerk_std_X
+#### **tBodyGyroJerk_std_X**
   * text1
   * text2
   * text3
 
-#### tBodyGyroJerk_std_Y
+#### **tBodyGyroJerk_std_Y**
   * text1
   * text2
   * text3
 
-#### tBodyGyroJerk_std_Z
+#### **tBodyGyroJerk_std_Z**
   * text1
   * text2
   * text3
 
-#### tBodyAccMag_mean
+#### **tBodyAccMag_mean**
   * text1
   * text2
   * text3
 
-#### tBodyAccMag_std
+#### **tBodyAccMag_std**
   * text1
   * text2
   * text3
 
-#### tGravityAccMag_mean
+#### **tGravityAccMag_mean**
   * text1
   * text2
   * text3
 
-#### tGravityAccMag_std
+#### **tGravityAccMag_std**
   * text1
   * text2
   * text3
 
-#### tBodyAccJerkMag_mean
+#### **tBodyAccJerkMag_mean**
   * text1
   * text2
   * text3
 
-#### tBodyAccJerkMag_std
+#### **tBodyAccJerkMag_std**
   * text1
   * text2
   * text3
 
-#### tBodyGyroMag_mean
+#### **tBodyGyroMag_mean**
   * text1
   * text2
   * text3
 
-#### tBodyGyroMag_std
+#### **tBodyGyroMag_std**
   * text1
   * text2
   * text3
 
-#### tBodyGyroJerkMag_mean
+#### **tBodyGyroJerkMag_mean**
   * text1
   * text2
   * text3
 
-#### tBodyGyroJerkMag_std
+#### **tBodyGyroJerkMag_std**
   * text1
   * text2
   * text3
 
-#### fBodyAcc_mean_X
+#### **fBodyAcc_mean_X**
   * text1
   * text2
   * text3
 
-#### fBodyAcc_mean_Y
+#### **fBodyAcc_mean_Y**
   * text1
   * text2
   * text3
 
-#### fBodyAcc_mean_Z
+#### **fBodyAcc_mean_Z**
   * text1
   * text2
   * text3
 
-#### fBodyAcc_std_X
+#### **fBodyAcc_std_X**
   * text1
   * text2
   * text3
 
-#### fBodyAcc_std_Y
+#### **fBodyAcc_std_Y**
   * text1
   * text2
   * text3
 
-#### fBodyAcc_std_Z
+#### **fBodyAcc_std_Z**
   * text1
   * text2
   * text3
 
-#### fBodyAccJerk_mean_X
+#### **fBodyAccJerk_mean_X**
   * text1
   * text2
   * text3
 
-#### fBodyAccJerk_mean_Y
+#### **fBodyAccJerk_mean_Y**
   * text1
   * text2
   * text3
 
-#### fBodyAccJerk_mean_Z
+#### **fBodyAccJerk_mean_Z**
   * text1
   * text2
   * text3
 
-#### fBodyAccJerk_std_X
+#### **fBodyAccJerk_std_X**
   * text1
   * text2
   * text3
 
-#### fBodyAccJerk_std_Y
+#### **fBodyAccJerk_std_Y**
   * text1
   * text2
   * text3
 
-#### fBodyAccJerk_std_Z
+#### **fBodyAccJerk_std_Z**
   * text1
   * text2
   * text3
 
-#### fBodyGyro_mean_X
+#### **fBodyGyro_mean_X**
   * text1
   * text2
   * text3
 
-#### fBodyGyro_mean_Y
+#### **fBodyGyro_mean_Y**
   * text1
   * text2
   * text3
 
-#### fBodyGyro_mean_Z
+#### **fBodyGyro_mean_Z**
   * text1
   * text2
   * text3
 
-#### fBodyGyro_std_X
+#### **fBodyGyro_std_X**
   * text1
   * text2
   * text3
 
-#### fBodyGyro_std_Y
+#### **fBodyGyro_std_Y**
   * text1
   * text2
   * text3
 
-#### fBodyGyro_std_Z
+#### **fBodyGyro_std_Z**
   * text1
   * text2
   * text3
 
-#### fBodyAccMag_mean
+#### **fBodyAccMag_mean**
   * text1
   * text2
   * text3
 
-#### fBodyAccMag_std
+#### **fBodyAccMag_std**
   * text1
   * text2
   * text3
 
-#### fBodyBodyAccJerkMag_mean
+#### **fBodyBodyAccJerkMag_mean**
   * text1
   * text2
   * text3
 
-#### fBodyBodyAccJerkMag_std
+#### **fBodyBodyAccJerkMag_std**
   * text1
   * text2
   * text3
 
-#### fBodyBodyGyroMag_mean
+#### **fBodyBodyGyroMag_mean**
   * text1
   * text2
   * text3
 
-#### fBodyBodyGyroMag_std
+#### **fBodyBodyGyroMag_std**
   * text1
   * text2
   * text3
 
-#### fBodyBodyGyroJerkMag_mean
+#### **fBodyBodyGyroJerkMag_mean**
   * text1
   * text2
   * text3
 
-#### fBodyBodyGyroJerkMag_std
+#### **fBodyBodyGyroJerkMag_std**
   * text1
   * text2
   * text3

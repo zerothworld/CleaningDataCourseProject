@@ -743,17 +743,11 @@ represenation of the first tidy data set. Rather than having a separate
 column for each measurement variable, the melted version uses a "variable" and
 "value" column to represent each measurement feature name and its
 corresponding value in first tidy data set. Thus each orignal record
-gets exapanded out into 66 skinny records.
+gets expanded out into 66 skinny records.
 
 We then perform the "reshaping" of the data into the desired  summarized form
 by applying the dcast() function (also in the reshape2 package) to
 the melted data, as in "dcast(meltData, Subject + Activity ~ variable, mean)".
-
-I also built a test harness, that uses very simpleminded iteration to perform
-averaging of a specific measurement feature for a specific subject and
-activity in order to spot check that the above-described sumarization code
-is working correctly. These tests verified that the reshaping operation
-is performing the desired summarization.
 
 We also apply an order() operation to yield a major ordering of the data
 by Subject and minor ordering by Activity.

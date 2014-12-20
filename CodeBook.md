@@ -376,12 +376,401 @@ Instructions for running the "run_analysis.R" script are found in the
 
 
 ### DATA DICTIONARY - Second Tidy Data Set:
-#### *Summarzation: averages feature observations for each Subject/Activity pair*
+#### *Summarization which averages feature observations for each Subject/Activity pair*
 #### (White-space-delimited file format, with header)
 
-This is where data dictionary goes for first tidy data set
+#### Subject
+  * Integer code identifying experimental subject in UCI HAR dataset
+  * Units: dimensionless
+  * Values in {1, 3, 5, 6, 7, 8, 11, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 28, 29, 30} represent experiment subjects in *training* group
+  * Values in {2, 4, 9, 10, 12, 13, 18, 20, 24} represent experiment subjects in *test* group
+  * Refer to: subject_train.txt and subject_test.txt files in UCI HAR dataset
+
+#### Activity
+  * Character string indicating the activity that the experimental subject is engaged in during the collection of measurements
+  * Units: dimensionless, from enumerated set
+  * Values in {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
+  * Refer to: activity_labels.txt file in UCI HAR dataset
+
+#### tBodyAcc_mean_X_AV
+  * Mean value of time-domain Body Acceleration signal in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAcc_mean_Y_AV
+  * Mean value of time-domain Body Acceleration signal in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAcc_mean_Z_AV
+  * Mean value of time-domain Body Acceleration signal in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAcc_std_X_AV
+  * Standard deviation of time-domain Body Acceleration signal in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAcc_std_Y_AV
+  * Standard deviation of time-domain Body Acceleration signal in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAcc_std_Z_AV
+  * Standard deviation of time-domain Body Acceleration signal in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tGravityAcc_mean_X_AV
+  * Mean value of time-domain Gravity Acceleration signal in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tGravityAcc_mean_Y_AV
+  * Mean value of time-domain Gravity Acceleration signal in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tGravityAcc_mean_Z_AV
+  * Mean value of time-domain Gravity Acceleration signal in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tGravityAcc_std_X_AV
+  * Standard deviation of time-domain Gravity Acceleration signal in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tGravityAcc_std_Y_AV
+  * Standard deviation of time-domain Gravity Acceleration signal in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tGravityAcc_std_Z_AV
+  * Standard deviation of time-domain Gravity Acceleration signal in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccJerk_mean_X_AV
+  * Mean value of time-domain Body Acceleration Jerk (time-derivative) signals in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccJerk_mean_Y_AV
+  * Mean value of time-domain Body Acceleration Jerk (time-derivative) signals in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccJerk_mean_Z_AV
+  * Mean value of time-domain Body Acceleration Jerk (time-derivative) signals in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccJerk_std_X_AV
+  * Standard deviation of time-domain Body Acceleration Jerk (time-derivative) signals in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccJerk_std_Y_AV
+  * Standard deviation of time-domain Body Acceleration Jerk (time-derivative) signals in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccJerk_std_Z_AV
+  * Standard deviation of time-domain Body Acceleration Jerk (time-derivative) signals in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyro_mean_X_AV
+  * Mean value of time-domain Gyroscope angular velocity signal about X axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyro_mean_Y_AV
+  * Mean value of time-domain Gyroscope angular velocity signal about Y axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyro_mean_Z_AV
+  * Mean value of time-domain Gyroscope angular velocity signal about Z axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyro_std_X_AV
+  * Standard deviation of time-domain Gyroscope angular velocity signal about X axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyro_std_Y_AV
+  * Standard deviation of time-domain Gyroscope angular velocity signal about Y axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyro_std_Z_AV
+  * Standard deviation of time-domain Gyroscope angular velocity signal about Z axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroJerk_mean_X_AV
+  * Mean value of time-domain Gyroscope Jerk (angular acceleration) signal about X axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroJerk_mean_Y_AV
+  * Mean value of time-domain Gyroscope Jerk (angular acceleration) signal about Y axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroJerk_mean_Z_AV
+  * Mean value of time-domain Gyroscope Jerk (angular acceleration) signal about Z axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroJerk_std_X_AV
+  * Standard deviation of time-domain Gyroscope Jerk (angular acceleration) signal about X axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroJerk_std_Y_AV
+  * Standard deviation of time-domain Gyroscope Jerk (angular acceleration) signal about Y axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroJerk_std_Z_AV
+  * Standard deviation of time-domain Gyroscope Jerk (angular acceleration) signal about Z axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccMag_mean_AV
+  * Mean value of time-domain Body Acceleration signal magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccMag_std_AV
+  * Standard deviation of time-domain Body Acceleration signal magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tGravityAccMag_mean_AV
+  * Mean value of time-domain Gravity Acceleration signal magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tGravityAccMag_std_AV
+  * Standard deviation of time-domain Gravity Acceleration signal magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccJerkMag_mean_AV
+  * Mean value of time-domain Body Acceleration Jerk (time derivative) magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyAccJerkMag_std_AV
+  * Standard deviation of time-domain Body Acceleration Jerk (time derivative) magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroMag_mean_AV
+  * Mean value of time-domain Gyroscope angular velocity magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroMag_std_AV
+  * Standard deviation of time-domain Gyroscope angular velocity magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroJerkMag_mean_AV
+  * Mean value of time-domain Gyroscope Jerk (angular acceleration) magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### tBodyGyroJerkMag_std_AV
+  * Standard deviation of time-domain Gyroscope Jerk (angular acceleration) magnitude , averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAcc_mean_X_AV
+  * Mean value of frequency-domain Body Acceleration signal in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAcc_mean_Y_AV
+  * Mean value of frequency-domain Body Acceleration signal in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAcc_mean_Z_AV
+  * Mean value of frequency-domain Body Acceleration signal in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAcc_std_X_AV
+  * Standard deviation of frequency-domain Body Acceleration in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAcc_std_Y_AV
+  * Standard deviation of frequency-domain Body Acceleration in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAcc_std_Z_AV
+  *  Standard deviation of frquency-domain Body Acceleration in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAccJerk_mean_X_AV
+  * Mean value of frequency-domain Body Acceleration Jerk (time derivative) in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAccJerk_mean_Y_AV
+  * Mean value of frequency-domain Body Acceleration Jerk (time derivative) in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAccJerk_mean_Z_AV
+  * Mean value of frequency-domain Body Acceleration Jerk (time derivative) in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAccJerk_std_X_AV
+  * Standard deviation of frequency-domain Body Acceleration Jerk (time derivative) in X direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAccJerk_std_Y_AV
+  * Standard deviation of frequency-domain Body Acceleration Jerk (time derivative) in Y direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAccJerk_std_Z_AV
+  * Standard deviation of frequency-domain Body Acceleration Jerk (time derivative) in Z direction, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyGyro_mean_X_AV
+  * Mean value of frequency-domain Gyroscope angular velocity about X axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyGyro_mean_Y_AV
+  * Mean value of frequency-domain Gyroscope angular velocity about Y axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyGyro_mean_Z_AV
+  * Mean value of frequency-domain Gyroscope angular velocity about Z axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyGyro_std_X_AV
+  * Standard deviation of frequency-domain Gyroscope angular velocity about X axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyGyro_std_Y_AV
+  * Standard deviation of frequency-domain Gyroscope angular velocity about Y axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyGyro_std_Z_AV
+  * Standard deviation of frequency-domain Gyroscope angular velocity about Z axis, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAccMag_mean_AV
+  * Mean value of frequency-domain Body Acceleration magnitude, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyAccMag_std_AV
+  * Standard deviation of frequency-domain Body Acceleration magnitude, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyBodyAccJerkMag_mean_AV
+  * Mean value of frequency-domain Body Acceleration Jerk (time derivative) magnitude, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyBodyAccJerkMag_std_AV
+  * Standard deviation of frequency-domain Body Acceleration Jerk (time derivative) magnitude, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyBodyGyroMag_mean_AV
+  * Mean value of frequency-domain Gyroscope angular velocity magnitude, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyBodyGyroMag_std_AV
+  * Standard deviation of frequency-domain Gyroscope angular velocity magnitude, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyBodyGyroJerkMag_mean_AV
+  * Mean value of frequency-domain Gyroscope Jerk (angular acceleration) magnitude, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
+
+#### fBodyBodyGyroJerkMag_std_AV
+  * Standard deviation of frequency-domain Gyroscope Jerk (angular acceleration) magnitude, averaged
+for each distinct {subject, activity} pair over all experimental samples for that pair
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
 
 
+### STUDY DESIGN - Second Tidy Data Set:
 
+The second tidy data set is derived by applying transformations to
+the first tidy data set described above.
+In short, the second tidy data set represents a summarization
+of the first tidy data set.
+In the first tidy data set, for each given pair of {subject, activity},
+one sees many records corresponding to separate sampling intervals
+of the Samsung device data.
+In creating the second tidy data set, for every distinct
+{subject, activity} pair, we take all the corresponding records, and
+find the mean of each measurement feature. This average of each
+measurement represents the data summary for each {subject, activity} pair.
+
+To perform this summarization, the R analysis script first uses the R melt()
+function from the reshape2 package in order to obtain a tall, skinny
+represenation of the first tidy data set. Rather than having a separate
+column for each measurement variable, the melted version uses a "variable" and
+"value" column to represent each measurement feature name and its
+corresponding value in first tidy data set. Thus each orignal record
+gets exapanded out into 66 skinny records.
+
+We then perform the "reshaping" of the data into the desired  summarized form
+by applying the dcast() function (also in the reshape2 package) to
+the melted data, as in "dcast(meltData, Subject + Activity ~ variable, mean)".
+
+I also built a test harness, that uses very simpleminded iteration to perform
+averaging of a specific measurement feature for a specific subject and
+activity in order to spot check that the above-described sumarization code
+is working correctly. These tests verified that the reshaping operation
+is performing the desired summarization.
+
+We also apply an order() operation to yield a major ordering of the data
+by Subject and minor ordering by Activity.
+
+In summary, the second tidy data set is obtained as a summary of
+the first tidy data set by averaging, for each pair of Subject/Activity,
+all the data samples for each feature for the given Subject and Activity. The
+final data set thus has exactly one record of feature averages for each
+distinct combination of subject and activity.
+
+The "run_analysis.R" script, available in this 
+[git repository](https://github.com/zerothworld/CleaningDataCourseProject)
+can be executed to transform the original UCI HAR data set into
+the first tidy data set described above, and to also build the
+second tidy data set from the first.
+
+Instructions for running the "run_analysis.R" script are found in the
+"README.txt" file located in the above-referenced git repository.
 
 

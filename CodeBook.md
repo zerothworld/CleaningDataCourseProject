@@ -287,7 +287,7 @@ of signal.
 #### Note:
 The measurement variable names maintain close correspondance with orignal
 variable names in UCI HAR dataset, per features.txt file in that data set.
-We have, however, removed trailing "()" strings from the header names, and
+We have, however, removed "()" strings from the header names, and
 changed "-" (dash) characters to "_" (underscore) characters.
 But in cases where the original header name contained the string "BodyBody",
 which might have been an inadvertent typo in original UCI HAR data,
@@ -341,10 +341,10 @@ of interest.
 Each of the merged X, y and subject data sets has 10299 records, and can be
 fused together to form a data set with columns identifying the subject,
 activity and 66 measurement variables. Each row of this merged data
-represents a given signal measurement instance for a given subject and
+represents a given signal sampling instance for a given subject and
 activity. But before doing this merge, we first clean up the activity
 data (the y data) by replacing the activity codes with descriptive names
-(using the mapping information in the activity_labels.txt files.
+(using the mapping information in the activity_labels.txt files).
 After doing this substitution of descriptive activity names in place of
 integer codes, we combine the subject, activity and X measurement data
 (using R function cbind).
@@ -370,6 +370,9 @@ The "run_analysis.R" script, available in this
 [git repository](https://github.com/zerothworld/CleaningDataCourseProject)
 can be executed to transform the original UCI HAR data set into
 the first tidy data set described above.
+
+Instructions for running the "run_analysis.R" script are found in the
+"README.txt" file located in the above-referenced git repository.
 
 
 ### DATA DICTIONARY - Second Tidy Data Set:

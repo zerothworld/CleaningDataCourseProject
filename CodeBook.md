@@ -365,9 +365,7 @@ The first tidy data set is derived through transformations applied to
 data in the "UCI HAR" data set. All data in the first tidy data set is
 thus derived data, not original experimental data.
 The original data to which we apply transformations can be obtained
-as a zip file from the URL:
-
-(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "UCI HAR study")
+as a zip file from the URL [UCI HAR study](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 
 ### DATA DICTIONARY - Second Tidy Data Set:

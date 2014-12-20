@@ -18,335 +18,346 @@
   * Refer to: activity_labels.txt file in UCI HAR dataset
 
 #### tBodyAcc_mean_X
-  * text1
-  * text2
+  * Mean value of time-domain Body Acceleration signal in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
 #### tBodyAcc_mean_Y
-  * text1
-  * text2
+  * Mean value of time-domain Body Acceleration signal in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAcc_mean_Z**
-  * text1
-  * text2
+#### tBodyAcc_mean_Z
+  * Mean value of time-domain Body Acceleration signal in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAcc_std_X**
-  * text1
-  * text2
+#### tBodyAcc_std_X
+  * Standard deviation of time-domain Body Acceleration signal in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAcc_std_Y**
-  * text1
-  * text2
+#### tBodyAcc_std_Y
+  * Standard deviation of time-domain Body Acceleration signal in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAcc_std_Z**
-  * text1
-  * text2
+#### tBodyAcc_std_Z
+  * Standard deviation of time-domain Body Acceleration signal in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tGravityAcc_mean_X**
-  * text1
-  * text2
+#### tGravityAcc_mean_X
+  * Mean value of time-domain Gravity Acceleration signal in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tGravityAcc_mean_Y**
-  * text1
-  * text2
+#### tGravityAcc_mean_Y
+  * Mean value of time-domain Gravity Acceleration signal in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tGravityAcc_mean_Z**
-  * text1
-  * text2
+#### tGravityAcc_mean_Z
+  * Mean value of time-domain Gravity Acceleration signal in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tGravityAcc_std_X**
-  * text1
-  * text2
+#### tGravityAcc_std_X
+  * Standard deviation of time-domain Gravity Acceleration signal in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tGravityAcc_std_Y**
-  * text1
-  * text2
+#### tGravityAcc_std_Y
+  * Standard deviation of time-domain Gravity Acceleration signal in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tGravityAcc_std_Z**
-  * text1
-  * text2
+#### tGravityAcc_std_Z
+  * Standard deviation of time-domain Gravity Acceleration signal in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccJerk_mean_X**
-  * text1
-  * text2
+#### tBodyAccJerk_mean_X
+  * Mean value of time-domain Body Acceleration Jerk (time-derivative) signals in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccJerk_mean_Y**
-  * text1
-  * text2
+#### tBodyAccJerk_mean_Y
+  * Mean value of time-domain Body Acceleration Jerk (time-derivative) signals in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccJerk_mean_Z**
-  * text1
-  * text2
+#### tBodyAccJerk_mean_Z
+  * Mean value of time-domain Body Acceleration Jerk (time-derivative) signals in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccJerk_std_X**
-  * text1
-  * text2
+#### tBodyAccJerk_std_X
+  * Standard deviation of time-domain Body Acceleration Jerk (time-derivative) signals in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccJerk_std_Y**
-  * text1
-  * text2
+#### tBodyAccJerk_std_Y
+  * Standard deviation of time-domain Body Acceleration Jerk (time-derivative) signals in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccJerk_std_Z**
-  * text1
-  * text2
+#### tBodyAccJerk_std_Z
+  * Standard deviation of time-domain Body Acceleration Jerk (time-derivative) signals in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyro_mean_X**
-  * text1
-  * text2
+#### tBodyGyro_mean_X
+  * Mean value of time-domain Gyroscope angular velocity signal about X axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyro_mean_Y**
-  * text1
-  * text2
+#### tBodyGyro_mean_Y
+  * Mean value of time-domain Gyroscope angular velocity signal about Y axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyro_mean_Z**
-  * text1
-  * text2
+#### tBodyGyro_mean_Z
+  * Mean value of time-domain Gyroscope angular velocity signal about Z axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyro_std_X**
-  * text1
-  * text2
+#### tBodyGyro_std_X
+  * Standard deviation of time-domain Gyroscope angular velocity signal about X axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyro_std_Y**
-  * text1
-  * text2
+#### tBodyGyro_std_Y
+  * Standard deviation of time-domain Gyroscope angular velocity signal about Y axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyro_std_Z**
-  * text1
-  * text2
+#### tBodyGyro_std_Z
+  * Standard deviation of time-domain Gyroscope angular velocity signal about Z axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroJerk_mean_X**
-  * text1
-  * text2
+#### tBodyGyroJerk_mean_X
+  * Mean value of time-domain Gyroscope Jerk (angular acceleration) signal about X axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroJerk_mean_Y**
-  * text1
-  * text2
+#### tBodyGyroJerk_mean_Y
+  * Mean value of time-domain Gyroscope Jerk (angular acceleration) signal about Y axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroJerk_mean_Z**
-  * text1
-  * text2
+#### tBodyGyroJerk_mean_Z
+  * Mean value of time-domain Gyroscope Jerk (angular acceleration) signal about Z axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroJerk_std_X**
-  * text1
-  * text2
+#### tBodyGyroJerk_std_X
+  * Standard deviation of time-domain Gyroscope Jerk (angular acceleration) signal about X axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroJerk_std_Y**
-  * text1
-  * text2
+#### tBodyGyroJerk_std_Y
+  * Standard deviation of time-domain Gyroscope Jerk (angular acceleration) signal about Y axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroJerk_std_Z**
-  * text1
-  * text2
+#### tBodyGyroJerk_std_Z
+  * Standard deviation of time-domain Gyroscope Jerk (angular acceleration) signal about Z axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccMag_mean**
-  * text1
-  * text2
+#### tBodyAccMag_mean
+  * Mean value of time-domain Body Acceleration signal magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccMag_std**
-  * text1
-  * text2
+#### tBodyAccMag_std
+  * Standard deviation of time-domain Body Acceleration signal magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tGravityAccMag_mean**
-  * text1
-  * text2
+#### tGravityAccMag_mean
+  * Mean value of time-domain Gravity Acceleration signal magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tGravityAccMag_std**
-  * text1
-  * text2
+#### tGravityAccMag_std
+  * Standard deviation of time-domain Gravity Acceleration signal magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccJerkMag_mean**
-  * text1
-  * text2
+#### tBodyAccJerkMag_mean
+  * Mean value of time-domain Body Acceleration Jerk (time derivative) magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyAccJerkMag_std**
-  * text1
-  * text2
+#### tBodyAccJerkMag_std
+  * Standard deviation of time-domain Body Acceleration Jerk (time derivative) magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroMag_mean**
-  * text1
-  * text2
+#### tBodyGyroMag_mean
+  * Mean value of time-domain Gyroscope angular velocity magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroMag_std**
-  * text1
-  * text2
+#### tBodyGyroMag_std
+  * Standard deviation of time-domain Gyroscope angular velocity magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroJerkMag_mean**
-  * text1
-  * text2
+#### tBodyGyroJerkMag_mean
+  * Mean value of time-domain Gyroscope Jerk (angular acceleration) magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **tBodyGyroJerkMag_std**
-  * text1
-  * text2
+#### tBodyGyroJerkMag_std
+  * Standard deviation of time-domain Gyroscope Jerk (angular acceleration) magnitude 
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAcc_mean_X**
-  * text1
-  * text2
+#### fBodyAcc_mean_X
+  * Mean value of frequency-domain Body Acceleration signal in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAcc_mean_Y**
-  * text1
-  * text2
+#### fBodyAcc_mean_Y
+  * Mean value of frequency-domain Body Acceleration signal in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAcc_mean_Z**
-  * text1
-  * text2
+#### fBodyAcc_mean_Z
+  * Mean value of frequency-domain Body Acceleration signal in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAcc_std_X**
-  * text1
-  * text2
+#### fBodyAcc_std_X
+  * Standard deviation of frequency-domain Body Acceleration in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAcc_std_Y**
-  * text1
-  * text2
+#### fBodyAcc_std_Y
+  * Standard deviation of frequency-domain Body Acceleration in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAcc_std_Z**
-  * text1
-  * text2
+#### fBodyAcc_std_Z
+  *  Standard deviation of frquency-domain Body Acceleration in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAccJerk_mean_X**
-  * text1
-  * text2
+#### fBodyAccJerk_mean_X
+  * Mean value of frequency-domain Body Acceleration Jerk (time derivative) in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAccJerk_mean_Y**
-  * text1
-  * text2
+#### fBodyAccJerk_mean_Y
+  * Mean value of frequency-domain Body Acceleration Jerk (time derivative) in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAccJerk_mean_Z**
-  * text1
-  * text2
+#### fBodyAccJerk_mean_Z
+  * Mean value of frequency-domain Body Acceleration Jerk (time derivative) in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAccJerk_std_X**
-  * text1
-  * text2
+#### fBodyAccJerk_std_X
+  * Standard deviation of frequency-domain Body Acceleration Jerk (time derivative) in X direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAccJerk_std_Y**
-  * text1
-  * text2
+#### fBodyAccJerk_std_Y
+  * Standard deviation of frequency-domain Body Acceleration Jerk (time derivative) in Y direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAccJerk_std_Z**
-  * text1
-  * text2
+#### fBodyAccJerk_std_Z
+  * Standard deviation of frequency-domain Body Acceleration Jerk (time derivative) in Z direction
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyGyro_mean_X**
-  * text1
-  * text2
+#### fBodyGyro_mean_X
+  * Mean value of frequency-domain Gyroscope angular velocity about X axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyGyro_mean_Y**
-  * text1
-  * text2
+#### fBodyGyro_mean_Y
+  * Mean value of frequency-domain Gyroscope angular velocity about Y axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyGyro_mean_Z**
-  * text1
-  * text2
+#### fBodyGyro_mean_Z
+  * Mean value of frequency-domain Gyroscope angular velocity about Z axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyGyro_std_X**
-  * text1
-  * text2
+#### fBodyGyro_std_X
+  * Standard deviation of frequency-domain Gyroscope angular velocity about X axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyGyro_std_Y**
-  * text1
-  * text2
+#### fBodyGyro_std_Y
+  * Standard deviation of frequency-domain Gyroscope angular velocity about Y axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyGyro_std_Z**
-  * text1
-  * text2
+#### fBodyGyro_std_Z
+  * Standard deviation of frequency-domain Gyroscope angular velocity about Z axis
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAccMag_mean**
-  * text1
-  * text2
+#### fBodyAccMag_mean
+  * Mean value of frequency-domain Body Acceleration magnitude
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyAccMag_std**
-  * text1
-  * text2
+#### fBodyAccMag_std
+  * Standard deviation of frequency-domain Body Acceleration magnitude
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyBodyAccJerkMag_mean**
-  * text1
-  * text2
+#### fBodyBodyAccJerkMag_mean
+  * Mean value of frequency-domain Body Acceleration Jerk (time derivative) magnitude
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyBodyAccJerkMag_std**
-  * text1
-  * text2
+#### fBodyBodyAccJerkMag_std
+  * Standard deviation of frequency-domain Body Acceleration Jerk (time derivative) magnitude
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyBodyGyroMag_mean**
-  * text1
-  * text2
+#### fBodyBodyGyroMag_mean
+  * Mean value of frequency-domain Gyroscope angular velocity magnitude
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyBodyGyroMag_std**
-  * text1
-  * text2
+#### fBodyBodyGyroMag_std
+  * Standard deviation of frequency-domain Gyroscope angular velocity magnitude
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyBodyGyroJerkMag_mean**
-  * text1
-  * text2
+#### fBodyBodyGyroJerkMag_mean
+  * Mean value of frequency-domain Gyroscope Jerk (angular acceleration) magnitude
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
-#### **fBodyBodyGyroJerkMag_std**
-  * text1
-  * text2
+#### fBodyBodyGyroJerkMag_std
+  * Standard deviation of frequency-domain Gyroscope Jerk (angular acceleration) magnitude
+  * Units: dimensionless, feature measurement has been normalized and bounded in [-1,1]
   * text3
 
+#### Note:
+The term *magnitude* refers to Euclidean norm of the X, Y and Z components
+of signal.
+#### Note:
+The measurement variable names maintain close correspondance with orignal
+variable names in UCI HAR dataset, per features.txt file in that data set.
+We have, however, removed trailing "()" strings from the header names, and
+changed "-" (dash) characters to "_" (underscore) characters.
+But in cases where the original header name contained the string "BodyBody",
+which might have been an inadvertent typo in original UCI HAR data,
+we have kept this "BodyBody" naming.
 
 
 ### DATA DICTIONARY - Second Tidy Data Set:

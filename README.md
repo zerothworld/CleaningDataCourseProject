@@ -81,11 +81,11 @@ In broad outline, the processing steps look like
 
   * Download and unzip UCI HAR dataset if it isn't present already
   * Read in various input files as data frames
-  * Generate the first tidy data frame by merging respective training and test data frames; joining subject, activity and measurements data into one data frame;filtering out measurement fields that are not mean or standard deviation; replacing integer activity codes with user-friendly descriptive names; and adding a header row with descriptive column names
+  * Generate the first tidy data frame by merging respective training and test data frames; joining activity, subject and measurements data into one data frame;filtering out measurement fields that are not mean or standard deviation; replacing integer activity codes with user-friendly descriptive names; and adding a header row with descriptive column names
   * Write first tidy data frame out to a file
-  * Starting with first tidy data frame, generate second tidy data frame as a summary which, for each distinct subject/activity pair, averages the values of each feature over all the samples for the given subject/activity pair, using the following steps
+  * Starting with first tidy data frame, generate second tidy data frame as a summary which, for each distinct activity/subject pair, averages the values of each feature over all the samples for the given activity/subject pair, using the following steps
     * Melt the data into tall, skinny format
-    * Reshape melted data frame back into summary form using "dcast(meltDat, Subject + Activity ~ variable, mean)"
+    * Reshape melted data frame back into summary form using "dcast(meltDat, Activity + Subject ~ variable, mean)"
     
 
 For more details on how the code works, and what data transformations are taking place,

@@ -174,8 +174,8 @@ run_analysis <- function()
   ## its own column.
   createAveragedData <- function(firstTidyDataFrame)
   {
-    ## Order the first tidy data set by Subject, then by Activity:
-    orderInfo <- order(firstTidyDataFrame$Subject, firstTidyDataFrame$Activity)
+    ## Order the first tidy data set by Activity, then by Subject:
+    orderInfo <- order(firstTidyDataFrame$Activity, firstTidyDataFrame$Subject)
     ordDat <- firstTidyDataFrame[orderInfo, ]
     
     ## Find header names, excluding Subject and Activity:
@@ -183,11 +183,11 @@ run_analysis <- function()
     measurementNames <- headerNames[3:length(headerNames)]
     
     ## Create melted data frame:
-    meltDat <- melt(ordDat, id = c("Subject", "Activity"), measure.vars = measurementNames)
+    meltDat <- melt(ordDat, id = c("Activity", "Subject"), measure.vars = measurementNames)
     
     ## Reshape the data back into wide format, with each measurement averaged for
-    ## each {Subject, Activity} pair:
-    reshapedDat <- dcast(meltDat, Subject + Activity ~ variable, mean)
+    ## each {Activity, Subject} pair:
+    reshapedDat <- dcast(meltDat, Activity + Subject ~ variable, mean)
     
     ## We next modify the measurement header names to append the string "_AV" to each
     ## of the original names. This makes it clearer that each value represents an
@@ -196,7 +196,7 @@ run_analysis <- function()
     modifiedMeasurementNames <- paste(measurementNames, "_AV", sep = "")
     
     ## Append the modified measurement names to the Subject and Activity names:
-    modifiedHeaderNames <- c("Subject", "Activity", modifiedMeasurementNames)
+    modifiedHeaderNames <- c("Activity", "Subject", modifiedMeasurementNames)
     
     ## Set the new header names in the reshaped data:
     names(reshapedDat) <- modifiedHeaderNames
@@ -242,19 +242,19 @@ run_analysis <- function()
   ## the activity_labels.txt raw data file:
   activityNamesDescriptive <- getActivityNames(yCombinedData, labelsData)
   
-  ## Do a cbind to combine the subject, activity and measurements columns into a single
+  ## Do a cbind to combine the activity, subject and measurements columns into a single
   ## data set with all the required fields:
-  subjectActivityMeasurementData <- cbind(sCombinedData,
-                                          activityNamesDescriptive,
+  subjectActivityMeasurementData <- cbind(activityNamesDescriptive,
+                                          sCombinedData,
                                           xMeanAndStdData)
   
   ## Step 4: Label the data set with appropriate variable names
-  ## Form vector of header names, including Subject, Activity, and the mean and std
+  ## Form vector of header names, including Activity, Subject, and the mean and std
   ## measurements, clean up the formats of the measurement names, then set the
   ## header names in the merged data frame:
   measurementFeatureNames <- as.character(filteredFeatureInfo$featureName)
   mn <- removeParentheses(measurementFeatureNames) ## Take out the parentheses from col names
-  headerNames <- c("Subject", "Activity", mn)
+  headerNames <- c("Activity", "Subject", mn)
   names(subjectActivityMeasurementData) <- headerNames ## Set column names of merged data frame
   
   ## At this point, we now have the first tidy data set in the form of the

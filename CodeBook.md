@@ -4,18 +4,18 @@
 #### *All mean and std observations*
 #### (White-space-delimited file format, with header)
 
+#### Activity
+  * Character string indicating the activity that the experimental subject is engaged in during the collection of measurements
+  * Units: dimensionless, from enumerated set
+  * Values in {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
+  * Refer to: activity_labels.txt file in UCI HAR dataset
+
 #### Subject
   * Integer code identifying experimental subject in UCI HAR dataset
   * Units: dimensionless
   * Values in {1, 3, 5, 6, 7, 8, 11, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 28, 29, 30} represent experiment subjects in *training* group
   * Values in {2, 4, 9, 10, 12, 13, 18, 20, 24} represent experiment subjects in *test* group
   * Refer to: subject_train.txt and subject_test.txt files in UCI HAR dataset
-
-#### Activity
-  * Character string indicating the activity that the experimental subject is engaged in during the collection of measurements
-  * Units: dimensionless, from enumerated set
-  * Values in {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
-  * Refer to: activity_labels.txt file in UCI HAR dataset
 
 #### tBodyAcc_mean_X
   * Mean value of time-domain Body Acceleration signal in X direction
@@ -323,9 +323,9 @@ on these files, refer to the README.txt file in the above-referenced zip file.
 
 The original UCI HAR experiment randomly divided the subjects into a test
 group and a training group. This distinction is not required in this
-project, and we begin the data transformation by merging the two X_* files
-into a single file, and likewise merge the subject_* files into a single file,
-and merge the y_* files into a single file.
+project, and we begin the data transformation by merging the two X_* data sets
+into a single data set, and likewise merge the subject_* data into a single data set,
+and merge the y_* data sets into a single data set.
 
 The present project also does not require all measurement variables in the
 original UCI HAR data. We only require the "mean" and "std" (standard
@@ -339,18 +339,18 @@ to contain only the columns corresponding to the 66 feature variables
 of interest.
 
 Each of the merged X, y and subject data sets has 10299 records, and can be
-fused together to form a data set with columns identifying the subject,
-activity and 66 measurement variables. Each row of this merged data
-represents a given signal sampling instance for a given subject and
-activity. But before doing this merge, we first clean up the activity
+fused together to form a data set with columns identifying the 
+activity, subject and 66 measurement variables. Each row of this merged data
+represents a given signal sampling instance for a given activity and
+subject. But before doing this merge, we first clean up the activity
 data (the y data) by replacing the activity codes with descriptive names
 (using the mapping information in the activity_labels.txt files).
 After doing this substitution of descriptive activity names in place of
-integer codes, we combine the subject, activity and X measurement data
+integer codes, we combine the activity, subject and X measurement data
 (using R function cbind).
 
 Next, we add a header of column names to the data. The first two columns
-are named "Subject" and "Activity". For the 66 measurement variables,
+are named "Activity" and "Subject". For the 66 measurement variables,
 we apply an automated R routine to derive the names from the appropriate
 66 feature names contained in the features.txt file. This automated
 transformation simply removes the "()" string appearing in the feature
@@ -361,7 +361,7 @@ Finally, the tidy data frame is stored as a file "./data/tidy/resultSet1.txt"
 relative to the user's working directory.
 
 In summary, the first tidy data set merges the training and test data
-of the UCI HAR data set, joins the subject, activity and measurements files
+of the UCI HAR data set, joins the activity, subject and measurements data
 into a single data set, filters out measurement fields that are not mean
 or standard deviations, replaces integer activity codes with user-friendly
 descripive names, and adds a header row with descriptive column names.
@@ -379,18 +379,18 @@ Instructions for running the "run_analysis.R" script are found in the
 #### *Summarization which averages feature observations for each Subject/Activity pair*
 #### (White-space-delimited file format, with header)
 
+#### Activity
+  * Character string indicating the activity that the experimental subject is engaged in during the collection of measurements
+  * Units: dimensionless, from enumerated set
+  * Values in {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
+  * Refer to: activity_labels.txt file in UCI HAR dataset
+
 #### Subject
   * Integer code identifying experimental subject in UCI HAR dataset
   * Units: dimensionless
   * Values in {1, 3, 5, 6, 7, 8, 11, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 28, 29, 30} represent experiment subjects in *training* group
   * Values in {2, 4, 9, 10, 12, 13, 18, 20, 24} represent experiment subjects in *test* group
   * Refer to: subject_train.txt and subject_test.txt files in UCI HAR dataset
-
-#### Activity
-  * Character string indicating the activity that the experimental subject is engaged in during the collection of measurements
-  * Units: dimensionless, from enumerated set
-  * Values in {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING}
-  * Refer to: activity_labels.txt file in UCI HAR dataset
 
 #### tBodyAcc_mean_X_AV
   * Mean value of time-domain Body Acceleration signal in X direction, averaged
@@ -729,13 +729,13 @@ The second tidy data set is derived by applying transformations to
 the first tidy data set described above.
 In short, the second tidy data set represents a summarization
 of the first tidy data set.
-In the first tidy data set, for each given pair of {subject, activity},
+In the first tidy data set, for each given pair of {activity, subject},
 one sees many records corresponding to separate sampling intervals
 of the Samsung device data.
 In creating the second tidy data set, for every distinct
-{subject, activity} pair, we take all the corresponding records, and
+{activity, subject} pair, we take all the corresponding records, and
 find the mean of each measurement feature. This average of each
-measurement represents the data summary for each {subject, activity} pair.
+measurement represents the data summary for each {activity, subject} pair.
 
 To perform this summarization, the R analysis script first uses the R melt()
 function from the reshape2 package in order to obtain a tall, skinny
@@ -747,20 +747,20 @@ gets expanded out into 66 skinny records.
 
 We then perform the "reshaping" of the data into the desired  summarized form
 by applying the dcast() function (also in the reshape2 package) to
-the melted data, as in "dcast(meltData, Subject + Activity ~ variable, mean)".
+the melted data, as in "dcast(meltData, Activity + Subject ~ variable, mean)".
 
 We also apply an order() operation to yield a major ordering of the data
-by Subject and minor ordering by Activity.
+by Activity and minor ordering by Subject.
 
 Finally, the second tidy data frame is stored as 
 a file "./data/tidy/resultSet2.txt"
 relative to the user's working directory.
 
 In summary, the second tidy data set is obtained as a summary of
-the first tidy data set by averaging, for each pair of Subject/Activity,
-all the data samples for each feature for the given Subject and Activity. The
+the first tidy data set by averaging, for each pair of Activity/Subject,
+all the data samples for each feature for the given Activity and Subject. The
 final data set thus has exactly one record of feature averages for each
-distinct combination of subject and activity.
+distinct combination of activity and subject.
 
 The "run_analysis.R" script, available in this 
 [git repository](https://github.com/zerothworld/CleaningDataCourseProject)

@@ -74,7 +74,7 @@ source code.
 
 #### NOTE:
 The code in run_analysis.R was created and tested in a Unix type of
-operating system environment (OX X v10.9.4) running RStudio v0.98.1087
+operating system environment (OS X v10.9.4) running RStudio v0.98.1087
 and R for Mac OS X v3.1.1
 
 

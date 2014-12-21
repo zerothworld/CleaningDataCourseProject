@@ -32,7 +32,7 @@ Upon subsequent calls of the run_analysis() function, it will not
 repeat the download and unzipping.
 
 As a side-effect of running run_analysis() function, the code will
-created subdirectories for storing the downloaded UCI HAR raw data,
+create subdirectories for storing the downloaded UCI HAR raw data,
 and a "./data/tidy" directory (relative to the working directory)
 where the generated tidy data set files will be stored (if these directories
 do not already exist.)

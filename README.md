@@ -63,10 +63,13 @@ taking no parameters and returning no value. Several nested functions
 (helper functions) are defined within the run_analysis() function to
 break down the processing into a number of simpler tasks.
 
-For details on how the code works, and what processing is taking place,
+For details on how the code works, and what data transformations are taking place,
 please refer to the "Study Design" sections for the 2 tidy data sets
 in the CodeBook.md document in this
-[git repository](https://github.com/zerothworld/CleaningDataCourseProject)
+[git repository](https://github.com/zerothworld/CleaningDataCourseProject).
+One can also refer to the detailed comments in the run_analysis.R
+source code.
+
 
 
 #### NOTE:
